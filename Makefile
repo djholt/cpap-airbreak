@@ -29,8 +29,8 @@ graph-offset := 0x80fd000
 # If there is a new version of the ghidra XML, the stubs.S
 # file will be regenerated so that the addresses and functions
 # are at the correct address in the ELF image.
-stubs.S: stm32.bin.xml
-	./ghidra2stubs < $< > $@
+#stubs.S: stm32.bin.xml
+#	./ghidra2stubs < $< > $@
 
 
 CROSS ?= arm-none-eabi-

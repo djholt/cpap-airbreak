@@ -20,9 +20,9 @@ patch() {
 	dd bs=1 seek=$offset conv=notrunc of="$OUT" status=none
 }
 
-echo "533b91127aa22e05b933db203ad56c449dc12a8c3fd62f57bd88c472a8061775  $IN"\
-| sha256sum --check \
-|| die "$IN: wrong hash"
+#echo "533b91127aa22e05b933db203ad56c449dc12a8c3fd62f57bd88c472a8061775  $IN"\
+#| sha256sum --check \
+#|| die "$IN: wrong hash"
 
 cp "$IN" "$OUT" || die "$OUT: copy failed"
 

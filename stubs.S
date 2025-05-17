@@ -3,6 +3,10 @@
 	.extern name; \
 	name = addr
 .text
+.type tim_read_tim5, %function
+.type GUI_SetColor, %function
+.type LCD_DrawPixel, %function
+.type LCD_FillRect, %function
 NSTUB(0x08000041, IWDG_configure)
 NSTUB(0x08000083, set_stack_and_dispatch_to_sram)
 NSTUB(0x080000b3, init_stack_and_get_the_party_started)
